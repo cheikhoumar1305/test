@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISI SUPTECH - Médiathèque</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #e9f7fc;
+        }
+        .banner {
+            background-color: #234c78;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .banner span {
+            margin: 0 15px;
+        }
+        .navbar-light .navbar-nav .nav-link {
+            color: #234c78;
+        }
+        .navbar-light .navbar-nav .nav-link:hover {
+            color: #234c78;
+        }
+        .navbar-brand {
+            color: #234c78;
+        }
+        .navbar-brand:hover {
+            color: #234c78;
+        }
+        .content-wrapper {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .btn-primary {
+            background-color: #234c78;
+            border-color: #234c78;
+        }
+        .btn-primary:hover {
+            background-color: #234c78;
+            border-color: #234c78;
+        }
+        footer {
+            background-color: #234c78;
+            color: white;
+        }
+        footer a {
+            color: white;
+        }
+        footer a:hover {
+            color: #234c78;
+        }
+        .animate-fade {
+            animation: fadeIn 2s;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .hero {
+            background-image: url('https://via.placeholder.com/1920x600');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.5rem;
+        }
+        .section-title {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 2rem;
+            text-align: center;
+            color: #234c78;
+        }
+        .card {
+            margin-bottom: 20px;
+        }
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .stats div {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .stats div h3 {
+            font-size: 2rem;
+            color: #234c78;
+        }
+        .navbar-light .navbar-nav .nav-link:hover {
+            background-color: #234c78;;
+            color: white;
+        }
+        .navbar-brand {
+            color: #234c78;
+        }
+        .navbar-brand:hover {
+            color: #234c78;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000; 
+        }
+        #backToTopBtn {
+            display: none; /* Hidden by default */
+            position: fixed; /* Fixed/sticky position */
+            bottom: 20px; /* Place the button at the bottom of the page */
+            right: 30px; /* Place the button 30px from the right */
+            z-index: 99; /* Make sure it does not overlap */
+            font-size: 18px; /* Increase font size */
+            border: none; /* Remove borders */
+            outline: none; /* Remove outline */
+            background-color: #e94d1a; /* Set a background color */
+            color: white; /* Text color */
+            cursor: pointer; /* Add a mouse pointer on hover */
+            padding: 15px; /* Some padding */
+            border-radius: 10px; /* Rounded corners */
+        }
+
+        #backToTopBtn:hover {
+            background-color: #555; /* Add a dark-grey background on hover */
+        }
+    </style>
+</head>
+<body>
+    <!-- Bannière -->
+    <div class="banner">
+        <span>Numéro de téléphone : +123456789</span>
+        <span>Adresse de contact : 123 Main St, Ville, Pays</span>
+        <span>Adresse e-mail : contact@isisuptech.edu</span>
+    </div>
+
+    <!-- Barre de navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img width="250" height="122" src="https://i2.wp.com/suptech.info/wp-content/uploads/2019/12/cropped-logo-250x250-2.png?fit=250%2C122&amp;ssl=1" class="custom-logo" alt="Suptech">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="../Accueil/accueil.html">Accueil</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="formationDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Formation</a>
+                    <div class="dropdown-menu" aria-labelledby="formationDropdown">
+                        <a class="dropdown-item" href="../Formation/DepartementInformatique/info.html">Département Informatique</a>
+                        <a class="dropdown-item" href="../Formation/DepartementGestion/gestion.html">Département Gestion</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="../Inscription/inscription.html">Inscription</a></li>
+                <li class="nav-item"><a class="nav-link" href="../Entreprise/entreprise.html">Entreprise</a></li>
+                <li class="nav-item"><a class="nav-link" href="../Mediatheque/mediatheque.html">Médiathèque</a></li>
+                <li class="nav-item"><a class="nav-link" href="../Contact/contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div>
+        <h1>Médiathèque</h1>
+        <p>Explorez nos ressources pédagogiques et multimédias</p>
+    </div>
+
+    <!-- Contenu principal -->
+    <div class="container mt-5 content-wrapper animate-fade">
+        <h2 class="section-title">Nos Réalisations</h2>
+
+        <!-- Section Réalisations -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/images/real1.jpg" class="card-img-top" alt="Realisation Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Journées Culturelles Du Groupe ISI</h5>
+                        <p class="card-text">L’Amicale des Anciens Étudiants du Groupe ISI organise les journées culturelles 23, 24 et 25 Mai 2024. Avec un programme riche et varié : Mercredi : Cours en tenue des années 80, suivi d’un Grand Sabar avec l’artiste invitée.</p>
+                        <a href="#" class="btn btn-primary">Voir plus</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/images/real2.jpg" class="card-img-top" alt="Realisation Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Séminaire d’orientation stratégiques du Groupe ISI</h5>
+                        <p class="card-text">Le Séminaire s’est tenu à Keur Massar ce 19 Avril 2024, destiné à définir les grandes lignes de notre développement futur. Ce séminaire a réuni tout le personnel du Groupe ISI</p>
+                        <a href="#" class="btn btn-primary">Voir plus</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/images/real3.jpg" class="card-img-top" alt="Realisation Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Distribution de Ndogou</h5>
+                        <p class="card-text">Dans le cadre de leurs actions sociales, les étudiants du Groupe ISI ont distribué le ndogou pendant le mois de ramadan au siège.Cet acte noble est organisé chaque année au niveau des 10 campus du Groupe ISI.</p>
+                        <a href="#" class="btn btn-primary">Voir plus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section Galerie de photos -->
+        <h2 class="section-title">Album Photo</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="/images/media1.webp" class="card-img-top" alt="Album Photo 1">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="/images/media2.webp" class="card-img-top" alt="Album Photo 2">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="/images/media 3.webp" class="card-img-top" alt="Album Photo 3">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="/images/media4.webp" class="card-img-top" alt="Album Photo 4">
+                </div>
+            </div>
+        </div>
+
+        <!-- Section Statistiques -->
+        <h2 class="section-title">Nos Statistiques</h2>
+        <div class="stats">
+            <div>
+                <h3>2000+</h3>
+                <p>Étudiants inscrits</p>
+            </div>
+            <div>
+                <h3>100+</h3>
+                <p>Partenaires industriels</p>
+            </div>
+            <div>
+                <h3>50+</h3>
+                <p>Projets réalisés</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pied de page -->
+    <footer class="mt-5 p-4 text-center">
+        <div class="container">
+            <p>&copy; 2023 ISI SUPTECH. Tous droits réservés.</p>
+            <p>Adresse: 123 Main St, Ville, Pays | Téléphone: +123456789 | Email: contact@isisuptech.edu</p>
+            <div>
+                <a href="#">Politique de confidentialité</a> |
+                <a href="#">Conditions d'utilisation</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bouton de retour en haut de la page -->
+    <button onclick="topFunction()" id="backToTopBtn" title="Retour en haut">Haut</button>
+
+    <!-- JavaScript de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Script pour le bouton de retour en haut de la page -->
+    <script>
+        // Obtenez le bouton:
+        var mybutton = document.getElementById("backToTopBtn");
+
+        // Lorsque l'utilisateur fait défiler vers le bas de 20px depuis le haut du document, montrez le bouton
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // Lorsque l'utilisateur clique sur le bouton, faites défiler jusqu'en haut du document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>

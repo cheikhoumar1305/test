@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISI SUPTECH - Formation</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #e9f7fc;
+        }
+        .banner {
+            background-color: #234c78;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            animation: fadeIn 2s;
+        }
+        .banner span {
+            margin: 0 15px;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .content-wrapper {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: slideIn 2s;
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        footer {
+            background-color: #234c78;
+            color: white;
+            margin-top: 20px;
+        }
+        footer a {
+            color: white;
+        }
+        footer a:hover {
+            color: #234c78;
+        }
+        .navbar-light .navbar-nav .nav-link:hover {
+            background-color: #234c78;
+            color: white;
+        }
+        .navbar-brand {
+            color: #234c78;
+        }
+        .navbar-brand:hover {
+            color: #234c78;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000; 
+        }
+
+        #backToTopBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: #e94d1a;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        #backToTopBtn:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <!-- Bannière -->
+    <div class="banner">
+        <span>Numéro de téléphone : +221 33 822 19 81/ 76 644 85 44</span>
+        <span>Adresse de contact : Sicap Liberte 3 N1977</span>
+        <span>Adresse e-mail : suptech@suptech.info</span>
+    </div>
+
+    <!-- Barre de navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img width="250" height="122" src="https://i2.wp.com/suptech.info/wp-content/uploads/2019/12/cropped-logo-250x250-2.png?fit=250%2C122&amp;ssl=1" class="custom-logo" alt="Suptech">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="../Accueil/accueil.html">Accueil</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="formationDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Formation</a>
+                    <div class="dropdown-menu" aria-labelledby="formationDropdown">
+                        <a class="dropdown-item" href="../Formation/DepartementInformatique/info.html">Département Informatique</a>
+                        <a class="dropdown-item" href="../Formation/DepartementGestion/gestion.html">Département Gestion</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="../Inscription/inscription.html">Inscription</a></li>
+                <li class="nav-item"><a class="nav-link" href="../Entreprise/entreprise.html">Entreprise</a></li>
+                <li class="nav-item"><a class="nav-link" href="../Mediatheque/mediatheque.html">Médiathèque</a></li>
+                <li class="nav-item"><a class="nav-link" href="../Contact/contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenu principal -->
+    <div class="container mt-5 content-wrapper">
+        <h2 class="text-primary">Formation</h2>
+        <p>Bienvenue sur notre page Formation. Découvrez nos départements et les formations qu'ils proposent.</p>
+
+        <div class="row">
+            <!-- Département de Gestion -->
+            <div class="col-md-6">
+                <h3 class="text-primary">Département de Gestion</h3>
+                <img src="/images/gestion.jpg" alt="Département de Gestion" class="img-fluid mb-3">
+                <p>Le Département de Gestion propose une formation de haute qualité destinée à préparer les étudiants à des carrières dans le monde des affaires et de la gestion. Nos programmes sont conçus pour développer les compétences en leadership, en stratégie, et en gestion d'entreprise.</p>
+                <h4>Programmes proposés :</h4>
+                <ul>
+                    <li><strong>Licence en Gestion</strong> - Une formation complète couvrant les principaux aspects de la gestion d'entreprise, y compris la comptabilité, le marketing, et les ressources humaines.</li>
+                    <li><strong>Master en Administration des Affaires (MBA)</strong> - Un programme avancé pour les professionnels souhaitant approfondir leurs compétences en gestion et en leadership.</li>
+                    <li><strong>Certificats Professionnels</strong> - Des programmes de courte durée pour se spécialiser dans des domaines spécifiques de la gestion.</li>
+                </ul>
+                <a class="btn btn-primary" href="../Formation/DepartementGestion/gestion.html" role="button">Voir plus de détails</a>
+            </div>
+
+            <!-- Département d'Informatique -->
+            <div class="col-md-6">
+                <h3 class="text-primary">Département d'Informatique</h3>
+                <img src="/images/informatik.jpg" alt="Département d'Informatique" class="img-fluid mb-3">
+                <p>Le Département d'Informatique offre une formation en informatique qui couvre les domaines de la science des données, la cybersécurité, le développement de logiciels, et bien plus encore. Nos programmes sont conçus pour équiper les étudiants des compétences techniques nécessaires pour réussir dans le secteur technologique.</p>
+                <h4>Programmes proposés :</h4>
+                <ul>
+                    <li><strong>Licence en Informatique</strong> - Un programme qui couvre les bases de la programmation, des systèmes d'information, et des réseaux informatiques.</li>
+                    <li><strong>Master en Science des Données</strong> - Un programme avancé axé sur l'analyse des données, l'apprentissage automatique, et l'intelligence artificielle.</li>
+                    <li><strong>Certificats en Cybersécurité</strong> - Des programmes de courte durée pour se spécialiser dans la protection des systèmes informatiques et des réseaux.</li>
+                </ul>
+                <a class="btn btn-primary" href="../Formation/DepartementInformatique/info.html" role="button">Voir plus de détails</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bouton de retour en haut -->
+    <button onclick="topFunction()" id="backToTopBtn" title="Remonter en haut">Haut</button>
+
+    <!-- Pied de page -->
+    <footer class="text-center text-lg-start mt-5">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">ISI SUPTECH</h5>
+                    <p>le monde de l'entreprise en une ecole, augmentez votre experience avec les TICS et une belle aventure en gestion pour bien diriger un monde de demain.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Liens</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="inscription.html">Inscription</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Contact</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li class="bi bi-telephone"><span>Tel:+221 77 978 26 18</span></li>
+                        <li><span>Email:suptech@suptech.info</span></li>
+                        <li><span>Adresse: Sicap Liberte3 N 1977</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            &copy; 2024 ISI SUPTECH. Tous droits réservés.
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS et dépendances -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+    
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("backToTopBtn").style.display = "block";
+            } else {
+                document.getElementById("backToTopBtn").style.display = "none";
+            }
+        }
+    
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+</body>
+</html>
